@@ -1,35 +1,35 @@
 // this program will use functions
 
-Wscript.Echo("image1").src="uk.jpg";
-Wscript.Echo("image2").src="canada.jpg";
-Wscript.Echo("image3").src="europe.jpg";
-Wscript.Echo("image4").src="india.jpg";
-Wscript.Echo("image5").src="australia.jpg";
-Wscript.Echo("image6").src="japan.jpg";
-Wscript.Echo("image7").src="china.jpg";
-Wscript.Echo("image8").src="russia.jpg";
+document.getElementById("image1").src="uk.jpg";
+document.getElementById("image2").src="canada.jpg";
+document.getElementById("image3").src="europe.jpg";
+document.getElementById("image4").src="india.jpg";
+document.getElementById("image5").src="australia.jpg";
+document.getElementById("image6").src="japan.jpg";
+document.getElementById("image7").src="china.jpg";
+document.getElementById("image8").src="russia.jpg";
 
 
-Wscript.Echo("w1").innerHTML="Sterling Pound";
+document.getElementById("w1").innerHTML="Sterling Pound";
 
-Wscript.Echo("w2").innerHTML="Canadian Dollars";
+document.getElementById("w2").innerHTML="Canadian Dollars";
 
-Wscript.Echo("w3").innerHTML="Euros";
+document.getElementById("w3").innerHTML="Euros";
 
-Wscript.Echo("w4").innerHTML="Indian Rupees";
+document.getElementById("w4").innerHTML="Indian Rupees";
 
-Wscript.Echo("w5").innerHTML="Australian Dollar";
+document.getElementById("w5").innerHTML="Australian Dollar";
 
-Wscript.Echo("w6").innerHTML="Japanese Yen";
+document.getElementById("w6").innerHTML="Japanese Yen";
 
-Wscript.Echo("w7").innerHTML="Chinese Yuan";
+document.getElementById("w7").innerHTML="Chinese Yuan";
 
-Wscript.Echo("w8").innerHTML="Russian Rubles";
+document.getElementById("w8").innerHTML="Russian Rubles";
 
 
 function convert(){
 //variables
-var n1=Wscript.Echo("txtN1").value;
+var n1=document.getElementById("txtN1").value;
 
 // need to convert variables from string to number
 
@@ -55,21 +55,38 @@ var total8=Math.round(number1*63.9*100)/100;
 
 
 
-	Wscript.Echo("w9").innerHTML= "£" + total;
+	document.getElementById("w9").innerHTML= "£" + total;
 
-	Wscript.Echo("w10").innerHTML= "$" + total2;
+	document.getElementById("w10").innerHTML= "$" + total2;
 
-	Wscript.Echo("w11").innerHTML= "€" + total3;
+	document.getElementById("w11").innerHTML= "€" + total3;
 
-	Wscript.Echo("w12").innerHTML= "₹" + total4;
+	document.getElementById("w12").innerHTML= "₹" + total4;
 	
-	Wscript.Echo("w13").innerHTML= "$" + total5;
+	document.getElementById("w13").innerHTML= "$" + total5;
 	
-	Wscript.Echo("w14").innerHTML= "¥" + total6;
+	document.getElementById("w14").innerHTML= "¥" + total6;
 	
-	Wscript.Echo("w15").innerHTML= "¥" + total7;
+	document.getElementById("w15").innerHTML= "¥" + total7;
 	
-	Wscript.Echo("w16").innerHTML= "₽" + total8;
+	document.getElementById("w16").innerHTML= "₽" + total8;
+
+
+}
+
+
+function newEntry(){
+
+	
+	document.getElementById("txtN1").value="";
+	document.getElementById("w9").innerHTML= "Amount =";
+	document.getElementById("w10").innerHTML= "Amount =";
+	document.getElementById("w11").innerHTML= "Amount =";
+	document.getElementById("w12").innerHTML= "Amount =";
+	document.getElementById("w13").innerHTML= "Amount =";
+	document.getElementById("w14").innerHTML= "Amount =";
+	document.getElementById("w15").innerHTML= "Amount =";
+	document.getElementById("w16").innerHTML= "Amount =";
 
 
 }
