@@ -1,5 +1,6 @@
 // this program will use functions
 
+document.getElementById("image9").src="gold.jpg";
 document.getElementById("image1").src="uk.jpg";
 document.getElementById("image2").src="canada.jpg";
 document.getElementById("image3").src="europe.jpg";
