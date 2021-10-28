@@ -10,7 +10,6 @@ document.getElementById("image7").src="china.jpg";
 document.getElementById("image8").src="russia.jpg";
 
 
-
 document.getElementById("w1").innerHTML="Sterling Pound";
 
 document.getElementById("w2").innerHTML="Canadian Dollars";
@@ -37,21 +36,21 @@ var n1=document.getElementById("txtN1").value;
 var number1=parseFloat(n1);
 
 
-var total=Math.round(number1*.77*100)/100;
+var total=Math.round(number1*.73*100)/100;
 
-var total2=Math.round(number1*1.31*100)/100;
+var total2=Math.round(number1*1.24*100)/100;
 
-var total3=Math.round(number1*0.9*100)/100;
+var total3=Math.round(number1*0.86*100)/100;
 
-var total4=Math.round(number1*71.04*100)/100;
+var total4=Math.round(number1*74.87*100)/100;
 
-var total5=Math.round(number1*1.46*100)/100;
+var total5=Math.round(number1*1.33*100)/100;
 
-var total6=Math.round(number1*108.43*100)/100;
+var total6=Math.round(number1*113.48*100)/100;
 
-var total7=Math.round(number1*7.08*100)/100;
+var total7=Math.round(number1*6.4*100)/100;
 
-var total8=Math.round(number1*63.9*100)/100;
+var total8=Math.round(number1*70.21*100)/100;
 
 
 
@@ -88,4 +87,6 @@ function newEntry(){
 	document.getElementById("w14").innerHTML= "Amount =";
 	document.getElementById("w15").innerHTML= "Amount =";
 	document.getElementById("w16").innerHTML= "Amount =";
+
+
 }
