@@ -41,21 +41,21 @@ var n1=document.getElementById("txtN1").value;
 var number1=parseFloat(n1);
 
 
-var total=Math.round(number1*.73*100)/100;
+var total=Math.round(number1*.84*100)/100;
 
-var total2=Math.round(number1*1.24*100)/100;
+var total2=Math.round(number1*1.36*100)/100;
 
-var total3=Math.round(number1*0.86*100)/100;
+var total3=Math.round(number1*0.94*100)/100;
 
-var total4=Math.round(number1*74.87*100)/100;
+var total4=Math.round(number1*82.93*100)/100;
 
-var total5=Math.round(number1*1.33*100)/100;
+var total5=Math.round(number1*1.49*100)/100;
 
-var total6=Math.round(number1*113.48*100)/100;
+var total6=Math.round(number1*136.48*100)/100;
 
-var total7=Math.round(number1*6.4*100)/100;
+var total7=Math.round(number1*6.96*100)/100;
 
-var total8=Math.round(number1*70.21*100)/100;
+var total8=Math.round(number1*76.02*100)/100;
 
 
 
