@@ -1,12 +1,13 @@
-﻿﻿﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 
 
 <head>	
 
 		<title> Currency Converter</title>
+		<link rel="stylesheet" href="style.css">
 </head>
 
-<body bgcolor=black>
+<!-- 
 
 <style>
 body {
@@ -15,25 +16,26 @@ body {
   background-attachment: fixed;
   background-size: 100% 100%;
 }
-</style>
+</style> -->
  
-<font size=5>
+<!-- <font size=5>
 <font face=Arial>
-<font color=#427df4>
+<font color=#427df4> -->
 
 <p>
-<hr size = 12 color = #427df4>
+<!-- <hr size = 12 color = #427df4> -->
 
-<center><h1> Currency Converter </h1></center>
-
-<hr size = 12 color = #427df4>
+<hr>
+<h1> Currency Converter </h1>
+<hr>
+<!-- <hr size = 12 color = #427df4> -->
 
 <br>
 <br>
 
- <center>
-<table BORDER=3 bordercolor=#f4a941 cellspacing=10 cellpadding=10
-	WIDTH=60% style="color:white">
+
+<table BORDER=3 bordercolor=#f4a941  cellspacing = 10 cellpadding=10
+	  class = "input-display">
 
 
 	<tr>
@@ -44,30 +46,27 @@ body {
 	</tr>
 
 </table>
-</center>
+
 
 <br>
 
-<center>
-<table BORDER=3 bordercolor=purple cellspacing=10 cellpadding=10
-	WIDTH=40%>
+<table BORDER=3 cellspacing=10 cellpadding=10 class = "button-display">
 
 	<tr>
 		<td style= "text-align: center"> <button onclick="convert()" style="font-size:20px; height:40px; width:150px; background-color:orange; color:white"> Convert </button> </td>
-		<td style= "text-align: center"> <button onclick="newEntry()"style="font-size:20px; height:40px; width:150px; background-color:orange; color:white"> New Amount </button>
+		<td style= "text-align: center"> <button onclick="newEntry()"style="font-size:20px; height:40px; width:150px; background-color: orange; color:white"> New Amount </button>
 </td>
 
 
 	</tr>
 
 </table>
-</center>
+
 
 <br>
 
-<center>
 <table BORDER=3 bordercolor=#f4a941 cellspacing=10 cellpadding=10
-	WIDTH=50% style="color:white">
+	WIDTH=50% class = "currency-display">
 
 	<tr>
 		<td style= "text-align: center"><img src="./images/uk.jpg" id="image1"> </img src> </td>
@@ -132,11 +131,8 @@ body {
 
 
 	</tr>
-
-	
-
 </table>
-</center>
+
 
 
 <script src="code.js"></script>

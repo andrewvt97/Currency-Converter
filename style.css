@@ -1,0 +1,37 @@
+body {
+    background-image: url('./images/gold.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    /* font-size: 5; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #427df4;
+}
+
+h1 {
+    size: 12;
+    text-align: center;
+}
+
+hr {
+    border: 5px solid #427df4;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 3px solid;  */
+    /* border-spacing: 10px;  */
+    /* padding: 10px;  */
+}
+
+.input-display {
+    width: 60%;
+    border-color: #f4a941;  
+
+}
+
+.button-display {
+    width: 40%;
+    border-color: purple;
+}
