@@ -9,12 +9,15 @@ const currencyTokens = ["£","$","€","₹","$","¥","¥","₽"]; // currency t
 function convert(){
 //variables
 	const moneyToConvert =document.getElementById("american-dollar").value;
-	if (moneyToConvert==="")
-	{
-		moneyToConvert=0;
-	}
-	const americanDollar=parseFloat(moneyToConvert); // need to convert variables from string to number
+	let americanDollar;
 
+	if (checkNumber(moneyToConvert)===true){
+		americanDollar=parseFloat(moneyToConvert); // need to convert variables from string to number
+	}
+	else{
+		return;
+	}
+	
 	const totals = []; // array to store the totals
 
 	// loop to calculate the totals
@@ -41,4 +44,13 @@ function newEntry(){
 		document.getElementById(idNames[i]).innerHTML= "Amount =";
 	}
 	
+}
+
+function checkNumber(_string)
+{
+    if(/^\d+\.\d+$|^\d+$/.test(_string))
+    {
+       return true;
+    }
+    return false;
 }
